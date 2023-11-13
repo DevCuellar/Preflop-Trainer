@@ -1,0 +1,33 @@
+<div class="cajonOpciones">
+    <mat-toolbar color="primary">
+        Opciones
+    </mat-toolbar>
+    <div class="content-wrapper">
+        <div class="container">
+            <mat-card class="margin-b5">
+                <div class="row">
+                    <div class="col">
+                        <h3>Tema</h3>
+                        <mat-slide-toggle [checked]="esTemaOscuro" color="primary" (toggleChange)="cambiarTema()">Modo
+                            Oscuro</mat-slide-toggle>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h3>Baraja</h3>
+                        <mat-radio-group class="vertical-radio-group" color="primary"
+                            [(ngModel)]="opcionesService.opciones.baraja">
+                            <mat-radio-button value="deck1"><img
+                                    [src]="'assets/img/decks/deck1/prev.png?version=' + globals.version"></mat-radio-button>
+                            <mat-radio-button value="deck2"><img
+                                    [src]="'assets/img/decks/deck2/prev.png?version=' + globals.version"></mat-radio-button>
+                        </mat-radio-group>
+                    </div>
+                </div>
+            </mat-card>
+        </div>
+    </div>
+</div>
+<div class="version-wrapper container">
+    <span class="version">Versión: {{globals.version}}</span>
+</div>

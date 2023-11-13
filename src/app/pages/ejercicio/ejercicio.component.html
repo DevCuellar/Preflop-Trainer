@@ -1,0 +1,47 @@
+<div class="container animated fast" [ngClass]="animacion">
+    <div class="row margin-b10" style="height: 40px;">
+        <div class="col-12">
+            <mat-card-title class="titulo-ejercicio">{{ejercicio.titulo}}</mat-card-title>
+            <div fxFlex></div>
+            <button mat-icon-button style="max-height: 28px;" color="primary" style="float: right" [hidden]="!ejercicio.validado" (click)="verTabla = !verTabla">
+                <mat-icon>cached</mat-icon>
+            </button>
+        </div>
+    </div>
+    <div class="row margin-b10">
+        <div class="col text-center">
+            <mat-card>
+                <div class="espacio-mesa">
+                    <dcm-mesa [data]="ejercicio.mesa" [hidden]="ejercicio.validado && verTabla"></dcm-mesa>
+                    <img [src]="ejercicio.imagen" onerror="this.src='assets/img/rangenotfound.png'" class="imagen-tabla" [hidden]="!(ejercicio.validado && verTabla)">
+                </div>
+            </mat-card>
+        </div>
+    </div>
+    <div class="row margin-b10">
+        <div class="col">
+            <mat-card>
+                <div class="row">
+                    <div class="col-sm-6 col-lg-3  margin-b10" *ngFor="let mano of ejercicio.manos">
+                        <dcm-mano [mano]="mano" [botones]="ejercicio.botones"></dcm-mano>
+                    </div>
+                </div>
+            </mat-card>
+        </div>
+    </div>
+    <div class="row margin-b10">
+        <div class="col-6">
+            <button mat-raised-button color="accent" (click)="finalizar()" *ngIf="!hayIdObjetivo">
+          FINALIZAR PRUEBA
+        </button>
+        </div>
+        <div class="col-6 text-right">
+            <button mat-raised-button color="primary" *ngIf="!ejercicio.validado" (click)="validarEjercicio()" [disabled]="!ejercicio.todasOpcionesSeleccionadas">
+          VALIDAR
+        </button>
+            <button mat-raised-button color="primary" *ngIf="ejercicio.validado" (click)="siguiente()">
+          {{textoSiguiente}}
+        </button>
+        </div>
+    </div>
+</div>

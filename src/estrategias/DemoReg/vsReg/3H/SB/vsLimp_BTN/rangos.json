@@ -1,0 +1,36 @@
+[{
+        "SE": "18+",
+        "LC": "A5o, A2o, KJo, K2o, QTo, Q2o, JTo, J4o-J2o, T5o, 95o, 85o, 75o, 65o, 54o, K9s, K2s, Q9s, Q2s, J9s, J2s, T9s, T2s, 98s, 92s, 87s, 82s, 76s, 72s, 65s, 62s, 54s, 52s, 43s-42s, 32s",
+        "RA": "AA-KK, TT-99, AJo, KQo, ATs, KTs, QTs, JTs",
+        "SH": "88-77, 33-22, ATo, A6o, A9s, A2s",
+        "FO": "T4o, 94o, 84o, 74o, 64o, 53o, 43o"
+    },
+    {
+        "SE": "14-18",
+        "LC": "KJo, K2o, QTo, Q4o, JTo, J6o, T9o, T6o, 98o, 96o, 87o-86o, 76o, K9s-K8s, K2s, Q9s, Q2s, J9s, J2s, T9s, T2s, 98s, 92s, 87s, 82s, 76s, 72s, 65s, 62s, 54s, 52s, 43s-42s, 32s",
+        "RA": "AA-KK, JJ, AKo-AQo, KQo, QJo, AKs, AJs, KTs, QTs, JTs",
+        "SH": "TT-99, 33-22, AJo-ATo, A2o, ATs-A9s, A3s-A2s",
+        "FO": "Q3o-Q2o, J5o-J4o, T5o, 95o, 85o, 75o, 65o, 54o, 43o"
+    },
+    {
+        "SE": "11-14",
+        "LC": "KTo, K4o, QTo, Q8o, JTo, J8o, T9o-T8o, 98o, K7s-K6s, K2s, Q9s-Q8s, Q2s, J9s, J2s, T9s, T2s, 98s, 92s, 87s, 82s, 76s, 72s, 65s, 62s, 54s, 52s, 43s-42s, 32s",
+        "RA": "AA-JJ, AKs, AJs, KJs, QJs",
+        "SH": "TT-99, 33-22, A3o-A2o, KQo-KJo, QJo, ATs-A9s, A3s-A2s, KTs, K8s, QTs, JTs",
+        "FO": "K3o-K2o, Q7o-Q6o, J7o-J6o, T7o-T6o, 97o-96o, 87o-86o, 76o"
+    },
+    {
+        "SE": "8-11",
+        "LC": "KTo, K7o-K6o, QTo-Q9o, JTo-J9o, T9o, K7s, K2s, Q9s, Q2s, J9s, J4s, T9s, T4s, 98s, 94s, 87s, 84s, 76s, 74s, 65s-64s, 54s-53s, 43s-42s, 32s",
+        "RA": "AA-JJ, AKs",
+        "SH": "TT-99, 33-22, AKo, A2o, KQo-KJo, QJo, AQs, A2s, KQs, K9s-K8s, QJs-QTs, JTs",
+        "FO": "K5o, Q8o, J8o, T8o, 98o, J3s-J2s, T3s, 93s, 83s, 73s, 63s, 52s"
+    },
+    {
+        "SE": "6-8",
+        "LC": "K5o, Q7o, J8o, T8o, 98o, Q4s, J4s, T4s, 94s, 84s, 74s, 64s, 54s-53s, 43s-42s, 32s",
+        "RA": "AA-KK",
+        "SH": "QQ-JJ, 33-22, AKo, A3o-A2o, K7o-K6o, Q8o, J9o, T9o, AKs, A3s-A2s, K5s-K2s, Q5s, Q3s-Q2s, J5s, T9s, T5s, 98s, 95s, 87s, 85s, 76s-75s, 65s",
+        "FO": "K4o, Q6o, J7o, T7o, 97o, 87o, 76o, J3s, T3s, 93s, 83s, 73s, 63s, 52s"
+    }
+]

@@ -1,0 +1,51 @@
+<div class="mesa-wrapper">
+    <img [src]="'assets/img/mesa.png?version=' + globals.version" class="imagen-mesa" />
+    <!-- HUD MESA -->
+    <div class="hud-mesa">
+        <p>S.Eff: {{mesa.stackEfectivo}}bb</p>
+        <p>Pot: {{mesa.potSize}}bb</p>
+    </div>
+    <!-- ANTE -->
+    <div class="apuesta ante" *ngIf="mesa.ante">
+        <dcm-apuesta [apuesta]="mesa.ante"></dcm-apuesta>
+    </div>
+    <!-- Player 1 -->
+    <div *ngIf="datosVillano1">
+        <div class="cards-player cards-player1" *ngIf="datosVillano1.accion !== 'Fold'">
+            <img [src]="'assets/img/downcards.png?version=' + globals.version" class="imagen-mesa" />
+        </div>
+        <div class="player player1">
+            <dcm-jugador avatarDerecha="true" [datosJugador]="datosVillano1"></dcm-jugador>
+        </div>
+        <div class="button button-player1" *ngIf="posicionBTN === 1"> <img [src]="'assets/img/chips/dealer-button.png?version=' + globals.version" class="imagen-mesa" /></div>
+        <div class="apuesta  apuesta-player1">
+            <dcm-apuesta *ngIf="datosVillano1.apuestas !== 0" [apuesta]="datosVillano1.apuestas"></dcm-apuesta>
+        </div>
+    </div>
+    <!-- Player 2 -->
+    <div *ngIf="datosVillano2">
+        <div class="cards-player cards-player2" *ngIf="datosVillano2.accion !== 'Fold'">
+            <img [src]="'assets/img/downcards.png?version=' + globals.version" class="imagen-mesa" />
+        </div>
+        <div class="player player2">
+            <dcm-jugador [datosJugador]="datosVillano2"></dcm-jugador>
+        </div>
+        <div class="button button-player2" *ngIf="posicionBTN === 2"> <img [src]="'assets/img/chips/dealer-button.png?version=' + globals.version" class="imagen-mesa" /></div>
+        <div class="apuesta apuesta-player2">
+            <dcm-apuesta *ngIf="datosVillano2.apuestas !== 0" [apuesta]="datosVillano2.apuestas"></dcm-apuesta>
+        </div>
+    </div>
+    <!-- Hero -->
+    <div>
+        <div class="cards-player cards-hero">
+            <img [src]="'assets/img/herocards.png?version=' + globals.version" class="imagen-mesa" />
+        </div>
+        <div class="player hero">
+            <dcm-jugador [datosJugador]="datosHero" tipoOponente="H"></dcm-jugador>
+        </div>
+        <div class="button button-hero" *ngIf="posicionBTN === 0"> <img [src]="'assets/img/chips/dealer-button.png?version=' + globals.version" class="imagen-mesa" /></div>
+        <div class="apuesta apuesta-hero">
+            <dcm-apuesta *ngIf="datosHero.apuestas !== 0" [apuesta]="datosHero.apuestas"></dcm-apuesta>
+        </div>
+    </div>
+</div>

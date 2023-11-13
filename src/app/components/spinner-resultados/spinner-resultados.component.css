@@ -1,0 +1,43 @@
+:host ::ng-deep .track circle {
+    stroke-opacity: 0.3 !important;
+}
+
+.mat-progress-spinner {
+    margin: auto;
+    display: inline;
+}
+
+::ng-deep .mat-progress-spinner circle,
+.mat-spinner circle {
+    stroke: #28A745;
+}
+
+::ng-deep .dark-theme .mat-progress-spinner circle,
+.dark-theme .mat-spinner circle {
+    stroke: #28A745;
+}
+
+.spinner-wrapper {
+    display: block;
+    width: 150px;
+    height: 160px;
+    margin: auto;
+}
+
+.spinner-label {
+    position: relative;
+    top: 58px;
+    width: 150px;
+    text-align: center;
+}
+
+.spinner-label span {
+    color: #28A745;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.spinner-label p {
+    color: #28A745;
+    font-weight: bold;
+}

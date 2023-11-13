@@ -1,0 +1,36 @@
+[{
+        "SE": "18+",
+        "LC": "55-44, 22, K6o, K2o, Q7o-Q6o, Q2o, J7o-J6o, T7o-T6o, 97o-96o, 87o-86o, 76o, 65o, Q6s, J7s, T5s, 95s, 85s, 74s, 72s, 63s-62s",
+        "RA": "AA-KK, JJ, 99, AKo, A3o-A2o, K7o, Q8o, J8o, T8o, 98o, AKs-AQs, A2s, K3s-K2s, Q7s, J8s, T7s-T6s, 96s, 86s, 75s, 65s-64s",
+        "SH": "TT, 88-66",
+        "FO": "J5o, T5o, 95o, 85o, 75o, 64o, 54o, 54s-53s, 43s, 32s"
+    },
+    {
+        "SE": "14-18",
+        "LC": "K6o, K2o, Q7o, Q2o, J7o, J3o, T7o, T5o, 97o, 95o, 87o, 85o, 76o-75o, 65o, Q6s, Q2s, J7s, J3s, T6s-T5s, T3s, 95s, 93s, 85s, 83s, 74s-73s, 63s, 54s-53s, 43s-42s, 32s",
+        "RA": "AA-KK, AQo, K8o-K7o, Q8o, J8o, T8o, 98o, A7s-A6s, K3s-K2s, Q7s, J8s, T7s-T6s, 96s, 86s, 75s, 65s-64s",
+        "SH": "JJ-TT, 66, 33-22, AJo-ATo, A3o-A2o, A6s-A5s, A2s",
+        "FO": "J2o, T4o, 94o, 84o, 74o, 64o, 54o, J2s, T2s, 92s, 82s, 72s, 62s, 52s"
+    },
+    {
+        "SE": "11-14",
+        "LC": "K7o, K2o, Q8o, Q2o, J8o, J3o, T8o, T5o, 97o, 95o, 87o, 85o, 75o, 65o, K5s, K2s, Q6s, Q2s, J7s, J3s, T6s, T3s, 93s, 85s, 83s, 74s-73s, 63s, 54s-53s, 43s-42s, 32s",
+        "RA": "AA-KK, K9o-K8o, Q9o, J9o, T9o, 98o, AKs, K7s-K6s, Q8s-Q7s, J8s, T7s, 98s, 96s, 87s-86s, 76s-75s, 65s-64s",
+        "SH": "44-22, AKo-AQo, A3o-A2o, KQo, KTo, QTo, JTo, AQs, A3s-A2s, KQs, K9s-K8s, Q9s, J9s, T9s",
+        "FO": "J2o, T4o, 94o, 84o, 74o, 64o, 54o, J2s, T2s, 92s, 82s, 72s, 62s, 52s"
+    },
+    {
+        "SE": "8-11",
+        "LC": "K7o, K2o, Q8o, Q2o, J8o, J3o, T8o, T5o, 97o, 95o, 87o, 85o, 75o, 65o, K5s, K2s, Q6s, Q2s, J7s, J3s, T6s, T3s, 95s, 93s, 85s, 83s, 74s-73s, 63s, 53s, 43s-42s, 32s",
+        "RA": "AA-JJ",
+        "SH": "TT, AKo, A2o, KQo, K8o, QJo, Q9o, J9o, T9o, 98o, A3s-A2s, K6s, Q7s, J8s, T7s, 96s, 86s, 75s, 64s, 54s",
+        "FO": "J2o, T4o, 94o, 84o, 74o, 64o, 54o, J2s, T2s, 92s, 82s, 72s, 62s, 52s"
+    },
+    {
+        "SE": "6-8",
+        "LC": "Q5o-Q4o, J5o, T6o, 96o, 86o, K2s, Q4s-Q2s, J4s, T4s, 94s, 84s, 74s, 43s",
+        "RA": "AA-JJ",
+        "SH": "TT-99, AKo, A2o, KQo, K2o, Q6o, J6o, T7o, 97o, 87o, 76o, AKs-AQs, A2s, K4s-K3s, Q5s, J5s, T5s, 95s, 85s, 75s, 64s, 54s",
+        "FO": "Q3o, J4o, T5o, 95o, 85o, 75o, 65o, 54o, J3s, T3s, 93s, 83s, 73s, 63s, 53s, 42s, 32s"
+    }
+]

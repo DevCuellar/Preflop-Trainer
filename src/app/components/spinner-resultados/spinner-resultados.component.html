@@ -1,0 +1,10 @@
+<div class="spinner-wrapper">
+    <mat-spinner class="track" mode="determinate" value="100" diameter="150">
+    </mat-spinner>
+    <mat-spinner class="value" diameter="150" mode="determinate" [value]="porcAciertos">
+    </mat-spinner>
+    <div class="spinner-label">
+        <span>{{porcAciertos}}%</span>
+        <p>Aciertos</p>
+    </div>
+</div>

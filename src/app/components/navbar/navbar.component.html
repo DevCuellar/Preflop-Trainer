@@ -1,0 +1,16 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <span class="clickable">{{navService.titulo}}</span>
+                    <span class=" float-right " *ngIf="opcionesVisibles ">
+                        <button mat-icon-button (click)="clickOpciones() ">
+                            <mat-icon>settings</mat-icon>
+                          </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </mat-toolbar-row>
+</mat-toolbar>

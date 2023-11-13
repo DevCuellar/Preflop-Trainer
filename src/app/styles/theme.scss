@@ -1,0 +1,26 @@
+@import '~@angular/material/theming';
+@import './component-themes.scss';
+@include mat-core();
+// -----------------------------------------
+// TEMA PRINCIPAL
+// -----------------------------------------
+$primary: mat-palette($mat-blue);
+$accent: mat-palette($mat-gray, 200, 400, 600);
+$warn: mat-palette($mat-red);
+$theme: mat-light-theme($primary, $accent, $warn);
+$foreground: $light-primary-text;
+@include angular-material-theme($theme);
+@include component-themes($theme);
+// -----------------------------------------
+// TEMA OSCURO
+// -----------------------------------------
+.dark-theme {
+    color: $light-primary-text;
+    $dark-primary: mat-palette($mat-blue);
+    $dark-accent: mat-palette($mat-gray);
+    $dark-warn: mat-palette($mat-red);
+    $dark-theme: mat-dark-theme($dark-primary, $dark-accent, $dark-warn);
+    $foreground: $dark-primary-text;
+    @include angular-material-theme($dark-theme);
+    @include component-themes($dark-theme);
+}

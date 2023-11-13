@@ -1,0 +1,36 @@
+[{
+        "SE": "18+",
+        "LC": "33-22, A9o, A2o, K2o, Q5o, J7o, T7o, 97o, 87o, A8s, A2s, KQs-KJs, K2s, QJs, JTs, J2s, 92s, 87s, 65s, 52s, 32s",
+        "RA": "AA-KK, JJ-TT",
+        "SH": "99-88, 55-44, AKo, ATo, AKs, A9s",
+        "FO": "Q4o, J6o, T6o, 96o, 86o, 76o"
+    },
+    {
+        "SE": "14-18",
+        "LC": "33-22, A8o, A2o, K2o, Q5o, J7o, T7o, 97o, 87o, A7s, A2s, KQs-KJs, K2s, QJs, JTs, J2s, 92s, 87s, 65s, 52s, 32s",
+        "RA": "AA-KK, JJ",
+        "SH": "99-88, 55-44, AKo, A9o, AKs, A8s",
+        "FO": "Q4o, J6o, T6o, 96o, 86o, 76o"
+    },
+    {
+        "SE": "11-14",
+        "LC": "22, A8o, A2o, KQo, K3o, Q8o, J8o, T8o, 98o, A7s, KQs-KJs, QJs, JTs, J2s, 92s, 62s",
+        "RA": "AA-JJ",
+        "SH": "TT-99, 44-33, AKo, A9o, AKs, A9s-A8s",
+        "FO": "K2o, Q7o, J7o, T7o, 97o, 87o"
+    },
+    {
+        "SE": "8-11",
+        "LC": "A8o, A2o, KQo, K8o, Q9o, JTo, A7s, KQs, QJs, Q5s, J5s, T5s, 96s, 86s, 75s, 64s, 53s, 43s",
+        "RA": "",
+        "SH": "AA-KK, 33-22, AKo, ATo-A9o, AKs, A9s-A8s",
+        "FO": "K7o, Q8o, J9o, T9o, Q4s, J4s, T4s, 95s, 85s, 74s, 63s, 52s, 42s, 32s"
+    },
+    {
+        "SE": "6-8",
+        "LC": "A8o, A5o, KQo, KTo, QTo, JTo, A7s, A2s, KQs-KJs, K5s-K4s, QJs, Q7s, J7s, T7s, 97s, 87s, 76s, 65s, 54s",
+        "RA": "",
+        "SH": "AA-KK, 99, 55, 33-22, ATo-A9o, A9s-A8s",
+        "FO": "A4o, K9o, Q9o, J9o, T9o, K3s-K2s, Q6s, J6s, T6s, 96s, 86s, 75s, 64s, 53s, 43s"
+    }
+]

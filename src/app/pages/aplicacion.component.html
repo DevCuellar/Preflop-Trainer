@@ -1,0 +1,18 @@
+<div [ngClass]="opcionesService.opciones.tema.claseTema">
+    <mat-sidenav-container fullscreen>
+        <mat-sidenav-content>
+            <!-- NAVBAR -->
+            <dcm-navbar [opcionesVisibles]="true"></dcm-navbar>
+            <!-- CONTENIDO -->
+            <div class="content-wrapper" [ngSwitch]="this.as.paginaActual">
+                <dcm-configuracion *ngSwitchCase="paginas.Configuracion"></dcm-configuracion>
+                <dcm-ejercicio *ngSwitchCase="paginas.Ejercicio" [idEjercicio]="this.as.idEjercicioObjetivo"></dcm-ejercicio>
+                <dcm-resultados *ngSwitchCase="paginas.Resultados"></dcm-resultados>
+            </div>
+        </mat-sidenav-content>
+        <!-- CAJON DERECHA -->
+        <mat-sidenav #sidenav position="end">
+            <dcm-cajonopciones></dcm-cajonopciones>
+        </mat-sidenav>
+    </mat-sidenav-container>
+</div>

@@ -1,0 +1,17 @@
+<div class="jugador-wrapper">
+    <div class="hud">
+        <img [src]="rutaImagen" class="avatar avatar-izq" *ngIf="!avatarDerecha" />
+        <div class="hud-info-wrapper" [ngClass]="avatarDerecha ? 'hud-izquierda' : 'hud-derecha'">
+            <div class="text-center">
+
+                <p class="accion" *ngIf="accion && accion !== 'Ninguna'">{{accion}}</p>
+                <p class="nick" *ngIf="accion === 'Ninguna' || !accion">{{nombre}}</p>
+                <hr class="separador">
+                <p class="stack">
+                    <small>{{ stack }}bb</small>
+                </p>
+            </div>
+        </div>
+        <img [src]="rutaImagen" class="avatar avatar-der" *ngIf="avatarDerecha" />
+    </div>
+</div>

@@ -1,0 +1,14 @@
+.version {
+    display: block;
+    text-align: end;
+    font-size: 75%;
+}
+
+.cajonOpciones {
+    min-height: 100%;
+    margin-bottom: -25px;
+}
+
+.version-wrapper {
+    height: 25px;
+}

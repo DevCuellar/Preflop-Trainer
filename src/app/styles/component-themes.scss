@@ -1,0 +1,5 @@
+@import '../pages/configuracion/configuracion.component';
+
+@mixin component-themes($theme) {
+  @include config-theme($theme);
+}

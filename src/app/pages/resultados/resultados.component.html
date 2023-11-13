@@ -1,0 +1,93 @@
+<div class="container animated fast" [ngClass]="animacion">
+
+    <div class="row margin-b10">
+        <div class="col-sm-6 col-md-4  margin-b10">
+            <mat-card>
+                <mat-card-content>
+                    <dcm-spinner-resultados [porcAciertos]="porcentajeAciertos">
+                    </dcm-spinner-resultados>
+                </mat-card-content>
+            </mat-card>
+        </div>
+        <div class="col-sm-6 col-md-8 margin-b10">
+            <mat-card style="height: 192px;">
+                <mat-card-content>
+                    <dcm-medidor-aciertos [aciertos]="totalAciertos" [errores]="totalErrores">
+                    </dcm-medidor-aciertos>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+
+    <div class="row margin-b10">
+        <div class="col-12">
+            <div class="table-wrapper">
+                <table mat-table [dataSource]="datasource" matSort class="mat-elevation-z8">
+
+                    <!-- Id -->
+                    <ng-container matColumnDef="id">
+                        <th mat-header-cell *matHeaderCellDef mat-sort-header> # </th>
+                        <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+                        <td mat-footer-cell *matFooterCellDef> </td>
+                    </ng-container>
+                    <!-- Num jugadores -->
+                    <ng-container matColumnDef="numJugadores">
+                        <th mat-header-cell *matHeaderCellDef mat-sort-header> Jugadores </th>
+                        <td mat-cell *matCellDef="let element"> {{element.numJugadores === '3H' ? '3 Handed': 'Heads Up'}} </td>
+                        <td mat-footer-cell *matFooterCellDef> </td>
+                    </ng-container>
+                    <!-- Tipo de oponente -->
+                    <ng-container matColumnDef="tipoOponente">
+                        <th mat-header-cell *matHeaderCellDef mat-sort-header> Oponentes </th>
+                        <td mat-cell *matCellDef="let element"> {{element.tipoOponente === 'Rec' ? 'vs Recreacional': 'vs Regular'}} </td>
+                        <td mat-footer-cell *matFooterCellDef> </td>
+                    </ng-container>
+                    <!-- Posición -->
+                    <ng-container matColumnDef="posicionHero">
+                        <th mat-header-cell *matHeaderCellDef mat-sort-header> Posición </th>
+                        <td mat-cell *matCellDef="let element"> {{element.posicionHero}} </td>
+                        <td mat-footer-cell *matFooterCellDef> </td>
+                    </ng-container>
+                    <!-- Situación -->
+                    <ng-container matColumnDef="textoAccionPrevia">
+                        <th mat-header-cell *matHeaderCellDef mat-sort-header> Situación </th>
+                        <td mat-cell *matCellDef="let element"> {{element.textoAccionPrevia}} </td>
+                        <td mat-footer-cell *matFooterCellDef> </td>
+                    </ng-container>
+                    <!-- Stack Efectivo -->
+                    <ng-container matColumnDef="stackEfectivo">
+                        <th mat-header-cell *matHeaderCellDef mat-sort-header> Stack Efectivo </th>
+                        <td mat-cell *matCellDef="let element"> {{element.stackEfectivo}} </td>
+                        <td mat-footer-cell *matFooterCellDef> Total </td>
+                    </ng-container>
+                    <!-- Aciertos -->
+                    <ng-container matColumnDef="manosCorrectas">
+                        <th mat-header-cell *matHeaderCellDef mat-sort-header> Aciertos </th>
+                        <td mat-cell *matCellDef="let element"> {{element.manosCorrectas}} </td>
+                        <td mat-footer-cell *matFooterCellDef> {{getTotalCorrectas()}} </td>
+                    </ng-container>
+                    <!-- Errores -->
+                    <ng-container matColumnDef="manosIncorrectas">
+                        <th mat-header-cell *matHeaderCellDef mat-sort-header> Errores </th>
+                        <td mat-cell *matCellDef="let element"> {{element.manosIncorrectas}} </td>
+                        <td mat-footer-cell *matFooterCellDef> {{getTotalIncorrectas()}} </td>
+                    </ng-container>
+
+
+
+                    <tr mat-header-row *matHeaderRowDef="columnas; sticky: true"></tr>
+                    <tr class="fila-resultados" mat-row *matRowDef="let row; columns: columnas;" (click)="clickEnRow(row)"></tr>
+                    <tr mat-footer-row *matFooterRowDef="columnas; sticky: true"></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="row margin-b10">
+        <div class="col-12 text-right">
+            <button mat-raised-button color="primary" (click)="inicio()">
+              INICIO
+            </button>
+        </div>
+    </div>
+</div>

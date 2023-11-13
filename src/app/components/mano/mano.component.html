@@ -1,0 +1,13 @@
+<div class="row cards-row">
+    <div class="col-6 col-sm-5 col-md-6 no-padding">
+        <div class="cards-wrapper">
+            <img class="carta1" [src]="'assets/img/decks/' + opcionesService.opciones.baraja + '/' + mano.mano.carta1 + '.png'" />
+            <img class="carta2" [src]="'assets/img/decks/' + opcionesService.opciones.baraja + '/' + mano.mano.carta2 + '.png'" />
+        </div>
+    </div>
+    <div class="col-6 col-sm-7 col-md-6 no-padding buttons-wrapper">
+        <button mat-raised-button *ngFor="let boton of botones" [color]="buttonColor(boton.accion)" [ngClass]="buttonClass(boton.accion)" (click)="seleccionarAccion(boton.accion)">
+        {{ boton.texto | uppercase }}
+      </button>
+    </div>
+</div>

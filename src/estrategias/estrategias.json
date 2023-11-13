@@ -1,0 +1,16 @@
+[
+    {
+        "carpeta": "DemoRec",
+        "texto": "Demo vs Recreacional",
+        "hayAnte": false,
+        "nivel": "0_basico",
+        "stack": "6-8, 8-11, 11-14, 14-18, 18+"
+    },
+    {
+        "carpeta": "DemoReg",
+        "texto": "Demo vs Regular",
+        "hayAnte": false,
+        "nivel": "0_basico",
+        "stack": "6-8, 8-11, 11-14, 14-18, 18+"
+    }
+]
